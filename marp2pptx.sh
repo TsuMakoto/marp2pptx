@@ -18,4 +18,4 @@ do
   fi
 done < $1.md
 
-marp slide.md
+marp slide.md -o publish/index.html
