@@ -2,9 +2,9 @@
 
 curl -O https://qiita.com/api/v2/items/$1
 cat $1 | jq -r ".body" >> $1.md
-rm $1
-
 cat $1 | jq -r ".title" >> slide.md
+
+rm $1
 echo "" >> slide.md
 echo "---" >> slide.md
 echo "" >> slide.md
@@ -27,3 +27,4 @@ done < $1.md
 rm $1.md
 
 marp slide.md -o publish/index.html
+rm slide.md
