@@ -8,11 +8,14 @@ IFS=''
 while read line
 do
   if [ ${line:0:1} = "#" ]; then
-    line="\n---\n${line}"
+    echo "" >> slide.md
+    echo "---" >> slide.md
+    echo "" >> slide.md
+    echo $line >> slide.md
+    echo "" >> slide.md
+  else
+    echo $line >> slide.md
   fi
-  echo $line >> slide.md
 done < $1.md
 
 marp slide.md
-marp -s .
-

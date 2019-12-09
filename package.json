@@ -1,0 +1,22 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "## usage",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./marp2pptx.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TsuMakoto/marp2pptx.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TsuMakoto/marp2pptx/issues"
+  },
+  "homepage": "https://github.com/TsuMakoto/marp2pptx#readme"
+}
